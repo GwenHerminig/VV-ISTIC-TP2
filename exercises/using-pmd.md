@@ -5,4 +5,5 @@ Pick a Java project from Github (see the [instructions](../sujet.md) for suggest
 ## Answer
 ![image](https://user-images.githubusercontent.com/119609091/223380687-079d5b80-ac3d-4f8e-af3b-06d55721c291.png)
 Un true positive :  	Use equals() to compare object references. => il faut utiliser .equals() au lieu de == pour comparer des objets.
+
 Un false positive :  	The final local variable name 'EXPECTED_OUT' doesn't match '[a-z][a-zA-Z0-9]*' => Il est courrant d'utiliser des nom en capital pour des données statiques. La convention utilisée ne pose pas de problèmes et est uniforme dans le projet (plusieurs fois la présence du warning).
