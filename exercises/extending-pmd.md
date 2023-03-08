@@ -23,3 +23,25 @@ Use your rule with different projects and describe you findings below. See the [
 
 ## Answer
 
+```
+<?xml version="1.0"?>
+<ruleset name="customsetrule">
+<rule name="if" language="java" message="VV"
+      class="net.sourceforge.pmd.lang.rule.XPathRule">
+      <description>
+Detect if there is more than 3 nested if statements
+    </description>
+    <priority>3</priority>
+    <properties>
+        <property name="xpath">
+            <value>
+<![CDATA[
+//IfStatement[count(.//IfStatement) &gt;= 3]
+]]>
+            </value>
+        </property>
+    </properties>
+</rule>
+</ruleset>
+```
+
