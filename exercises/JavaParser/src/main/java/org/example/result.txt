@@ -1,0 +1,1 @@
+La classe Person n'a pas de getter pour la variable age
